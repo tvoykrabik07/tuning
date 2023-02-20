@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Обнуление стилей элементов сайта */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Стилизуем секцию */
+.startpage{
+    position: relative;
+    height: 100vh;
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    background-position-y: -150px;
+    padding: 0px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Шапка сайта */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+/* Стилизуем ссылки в шапке */
+header > nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+/* Стилизуем заголовок */
+h1{
+    text-align: center;
+    font-size: 102px;
+    color: #db3138;
+    text-transform: uppercase;
+}
+
+/* Стилизуем подпись к заголовку */
+p{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.startpage > article > p > a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #db3138;
+}
+
+/* Подвал сайта */
+footer{
+    margin: 0px -200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer > article {
+    text-align: center;
+    border: white 1px solid;
+}
+
+footer > article > h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+footer > article > p {
+    font-size: 24px;
+    color: #db3138;
+}
+
+.startpage > span {
+    width: calc(100% + 200px);
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: -200px;
+}
+
+.startpage > *{
+    z-index: 1;
+}
+
+section{
+    background-color: black;
+}
+
+.secondpage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 200px;
+    grid-gap: 50px;
+}
+
+h2{
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.secondpage > section > p{
+    text-align: left;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.apple{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.apple > article {
+    border: 1px white solid;
+    padding: 10px;
+}
+.apple > article > h2{
+    text-align: center;
+    color: #db3138;
+}
+.apple > article > p{
+    font-size: 18px;
+}
+
+.thirdsection{
+    /* Применяем систему позиционирования grid */
+    display: grid;
+    /* Делим на 3 равные части */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Добавляем отступ между частями в 40px */
+    grid-gap: 40px;
+    /* Отступы по краям */
+    padding: 0 100px;
+}
+
+.thirdsection img{
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+}
+
+.thirdsection p {
+    /* Меняем цвет фона */
+    background-color: #db3138;
+    /* Выравниваем по центру */
+    text-align: center;
+    /* Добавляем отступ сверху и снизу */
+    padding: 20px 0;
+}
+
+.fourthsection{
+    /* Применяем систему позиционирования grid */
+    display: grid;
+    /* Делим на 2 равные части */
+    grid-template-columns: 1fr 1fr;
+    /* Добавялем отступ между частями */
+    grid-gap: 40px;
+    /* Добавялем отступ сверху у секции */
+    padding: 0 100px;
+    padding-top: 100px;
+}
+.fourthsection img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.fourthsection p{
+    /* Добавляем отступ сверху и снизу у текста */
+    padding: 40px;
+    font-size: 18px;
+}
+.fourthsection h2{
+    text-align: center;
+    font-size: 24px;
+}
+.fourthsection article>p{
+    text-align: left;
+}
+
+.services{
+    /* Применяем систему позиционирования flex */
+    display: flex;
+    /* Меняем ориентацию на столбец */
+    flex-direction: column;
+    /* Выравниваем элементы по центру */
+    align-items: center;
+}
+.services > section > a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.active{
+    background-color: #db3138;
+}
+
+.services > h2{
+    margin-bottom: 50px;
+}
+
+.services > section:last-child{
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin-top: 70px;
+}
+
+.services > section:last-child > article{
+    border: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.services > section:last-child > article > h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.services > section:last-child > article > a{
+    text-decoration: none;
+    color: white;
+    background-color: #db3138;
+    padding: 10px 20px;
+}
+
+i{
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 0px #db3138;
+}
+
+.works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.works>h2{
+    margin-bottom: 50px;
+}
+
+.works>section{
+    display: grid;
+    grid-template-columns: repeat(6, 16.6%);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.works>section>article>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.final{
+    padding: 50px 0;
+}
+
+.final>section{
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-gap: 20px;
+}
+
+.final>section>input{
+    grid-column: span 5;
+    padding: 10px 20px;
+    color: white;
+    background-color:black;
+}
+
+.final>section>textarea{
+    grid-column: span 9;
+    padding: 10px 20px;
+    color: white;
+    background-color:black;
+}
+
+.final>section>article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final>section>article>i{
+    font-size: 36px;
+    border: solid 2px gray;
+    padding: 10px;
+}
+
+.final>section>input:focus,
+.final>section>textarea:focus{
+    border: solid #db3138 2px;
+    outline: none;
+}
+
+.send{
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #db3138;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
